@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    background-color: black;
+    
+}
+
+.header{
+    width: 100vh;
+    height: 60px;
+    background-color: #38383838;
+    padding: 8px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkmagenta;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+
+    width: 100vh;
+    height: auto;
+}
+.news{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
