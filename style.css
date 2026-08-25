@@ -40,48 +40,7 @@ body {
     border: 1px solid #26272b;
     border-radius: 8px;
     width: 100%;                /* era "100%, 300px" (inválido) */
-    height: auto;
-    min-height: 200px;
-    padding: 16px;
-}
-
-.news-label {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: #6b6b70;
-    margin-bottom: 16px;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.bar {
-    width: 4px;
-    height: 32px;
-    border-radius: 2px;
-    flex-shrink: 0;
-}
-
-.bar-cyan   { background-color: #22d3ee; }
-.bar-purple { background-color: #a855f7; }
-.bar-pink   { background-color: #ec4899; }
-.bar-green  { background-color: #34d399; }
-
-.line {
-    flex: 1;
-    height: 12px;
-    border-radius: 4px;
-    background-color: #3a3a3f;
+    height: 200px;
 }
 
 /* ---------- Breakpoint 768px: flex-wrap ---------- */
@@ -94,21 +53,6 @@ body {
     .news {
         width: calc(50% - 12px);
     }
-
-    .items {
-        flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 16px;
-    }
-
-    .item {
-        width: calc(50% - 8px);
-    }
-
-    /* terceiro item (pink) sozinho, ocupando a linha toda */
-    .item:nth-child(3) {
-        width: 100%;
-    }
 }
 
 /* ---------- Breakpoint 1024px: row + sidebar ---------- */
@@ -119,18 +63,5 @@ body {
 
     .news {
         width: 33.333%;
-    }
-
-    .news:last-child {
-        width: 33.333%;
-    }
-
-    .items {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .item {
-        width: calc(50% - 8px);
     }
 }
